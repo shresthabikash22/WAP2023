@@ -16,7 +16,11 @@
         p {
             font-family: Georgia, "Times New Roman", Times, serif;
         }
-
+        p::first-letter {
+            font-size: 1.5em; 
+            
+        }
+        
         li {
             font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
                 sans-serif;
@@ -24,12 +28,24 @@
 
         a {
             color: red;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration:underline;
         }
 
         .imgcol {
             display: inline;
             padding-left: 50px;
         }
+        dl{
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        dt{
+            color:yellow;
+        }
+      
     </style>
 </head>
 <body>
@@ -47,14 +63,29 @@
         </ul>
         <h2>My Favorite Movies</h2>
         <p>I have listed some of my favorite movies.</p>
-        <ol>
+        <ol >
             <li> Gifted Hands (<a href="https://www.imdb.com/title/tt1295085/">IMDB</a>)
+                <dl>
+                    <dt>Director</dt>
+                    <dd>Thomas Carter</dd>
+                    <dt>Genre</dt>
+                    <dd>Biography / Drama</dd>
+                    <dt>Tagline</dt>
+                    <dd>His mother gave him the courage, his faith helped him believe, his brilliance gave him the power to change lives.</dd>
+                    <dt>Plot Outline</dt>
+                    <dd>Biography of Ben Carson who grew up to be Dr. Ben Carson, a world famous neurosurgeon at Johns Hopkins.</dd>
+                </dl>
             </li>
             <li>
                 Tada, kimi o aishiteru (<a href="https://www.imdb.com/title/tt0872022/">IMDB</a>)
             </li>
             <li>
                 Miracle in Cell No. 7 (<a href="https://www.imdb.com/title/tt2659414/">IMDB</a>)
+            </li>
+            <li>
+                A Moment To Remember (<a href="https://www.imdb.com/title/tt0428870/">IMDB</a>)
+            </li>
+            <li> The Shawshank Redemption (<a href=" https://www.imdb.com/title/tt0111161/">IMDB</a>)
             </li>
         </ol>
         <h2>My Moods</h2>
