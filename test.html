@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <link rel="stylesheet" href="workshop-registration.css" type="text/css">
+    <style>
+        body{
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 80%;
+    height: 85%;
+}
+#frame{margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid aquamarine;
+    /* background-color: aquamarine */
+    
+}
+.required{
+    color: red;
+}
+#row1{
+    margin-left: 0%;
+    background-color: aquamarine
+}
+#row2{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+#row3{
+    /* flex-shrink: 2; */
+    display: block;
+    height: 35px;
+    background-color: rgba(158, 148, 148, 0.5);
+}
+#row2col1{
+    /* align-self: stretch; */
+    margin-left: 2%;
+}
+#row2col2{
+    /* align-self: stretch; */
+    margin-left: 5%;
+}
+#row2col3{
+    /* margin-top: 0; */
+    margin-left: 20%;
+
+}
+
+#row2col4
+{
+    /* align-self: stretch; */
+    /* align-self: top; */
+    margin-top: 5%;
+    margin-left: 3%;
+}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <div id="frame">
+            <div id="row1">
+                <span style="background-color: aquamarine; color: black; font-weight: bolder; margin-left: 2%;">
+                    Workshop Registration Form
+                </span>
+                <select name="action" id="action" style="margin-left: 50px; background-color: aquamarine; border-style: none;">
+                    <option value="More Actions">More Actions</option>
+                    <option value="View schedule">View schedule</option>
+                    <option value="Choose Workshop">Choose Workshop</option>
+                </select>
+            </div>
+            <p style="margin-left: 2%; text-decoration: underline;">Register now while seats are avilable!</p>
+            <div id="row2">
+                <div id="row2col1">
+                    <label class="row2col1s">First Name</label> <span class="required">*</span><br><br>
+                    <label class="row2col1s">Last Name</label><span class="required">*</span><br><br>
+                    <label class="row2col1s">Company/Institution</label><span class="required">*</span><br><br>
+                    <label class="row2col1s">Address</label><span class="required">*</span><br><br>
+                    <label class="row2col1s" style="display: inline-block;margin-top: 58%; margin-bottom: 0;">City</label><br><br>
+                    <label class="row2col1s">State/Province/Region</label><br><br>
+                    <label class="row2col1s">Country</label><br><br>
+                    <label class="row2col1s">Email</label><span class="required">*</span><br><br>
+                    <label class="row2col1s">Phone Number</label><span class="required">*</span><br><br>
+                </div>
+                <div id="row2col2">
+                    <input type="text" name="fname" required><br><br>
+                    <input type="text" name="lname" required><br><br>
+                    <input type="text" name="company" required><br><br>
+                    <!-- <input type="text" name="address"><br><br> -->
+                    <textarea name="address" id="address" cols="21" rows="5" required></textarea><br><br>
+                    <input type="text" name="city"><br><br>
+                    <!-- <input type="text" name="state"><br><br> -->
+                    <select name="state" id="state" style="width: 178px;">
+                        <option value="none">--Select---</option>
+                        <option value="IA">Iowa</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="NJ">New Jersey</option>
+                    </select><br><br>
+                    <select name="country" id="country" style="width: 178px;">
+                        <option value="none">--Select---</option>
+                        <option value="ETH">Ethiopia</option>
+                        <option value="USA">USA</option>
+                        <option value="China">China</option>
+                        <option value="Russia">Russia</option>
+                    </select><br><br>
+                    <input type="text" name="Email" required><br><br>
+                    <input type="text" name="phone" required><br><br>
+                </div>
+                <div id="row2col3">
+                    <p style="text-decoration: underline;">Lunch</p>
+                    <label style="font-weight: bold;">Meal Preference</label><br>
+                    <p style="text-decoration: underline;">Payment Details</p>
+                    <label style="font-weight: bold;">Payment Mode</label><br><br><br><br><br>
+                    <label style="font-weight: bold;">DD/Cheque No.</label><br><br>
+                    <label style="font-weight: bold;">Drawn On (Bank Name)</label><br><br>
+                    <label style="font-weight: bold;">Payable at</label><br>
+                </div>
+                <div id="row2col4">
+                    <select name="food-type" id="food-type" style="width: 180px;">
+                        <option value="v">Vegiterian</option>
+                        <option value="nv">Non Vegiterian</option>
+                    </select><br>
+                    <label style="display: block; margin-top:29%;" hidden></label>
+                    <input type="checkbox" id="cash" value="cash"> <label for="cash">Cash</label><br>
+                    <input type="checkbox" id="cheque" value="cheque"> <label for="cheque">Cheque</label><br>
+                    <input type="checkbox" id="demand" value="demand"> <label for="demand">Demand Draft</label><br><br>
+                    <input type="text"> <br><br>
+                    <input type="text"><br><br>
+                    <input type="text"><br>
+                </div>
+            </div>
+            <div id="row3">
+                <button style="margin-left: 43%; background-color: aquamarine; border: aquamarine; height: 30px; margin-top: 3px; width: 10%;">Submit</button>
+                <button type="reset" style= "background-color: aquamarine; border: aquamarine; height: 30px; margin-top: 3px; width: 10%;">Reset</button>
+
+            </div>
+        </div>
+    </form>
+
+    <a href="#">
+        <img src="../htmlchecker.png" alt="Check HTML Validity">
+    </a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Falemulinger9.github.io%2FWAP%2Flab4%2Fworkshop-registration.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+        <img src="../css_checker.png" alt="Check CSS Validity" width="350" height="130">
+    </a>
+</body>
+</html>
