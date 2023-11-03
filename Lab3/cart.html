@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0faf77ef69.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+    <style>
+        div{
+            border-collapse: collapse;
+        }
+        #container{
+            width:90%;
+            height:95%;
+        }
+        #nav{
+            background-color: rgb(192, 187, 187);
+            height:3em;
+            border:2px solid black;
+            display: flex;
+            
+            /* flex-wrap: wrap; */
+        }
+        #left-nav{
+            flex: 1; 
+            font-size: 30px;
+            margin-left: 20px;
+            margin-top: 3px;;
+        }
+
+        #center-nav{
+            flex: 1;
+            font-size: 30px;
+            font-style: italic;
+            align-self: center;
+        }
+        #right-nav{
+            font-size: 30px;
+            margin-right: 20px;
+        }
+        .btn{
+            background-color: #d5dbcb83;
+            border-radius: 10%;
+            height:70%;
+            width:110%;
+        }
+        .btn{
+            background-color: #d5dbcb83;
+            border-radius: 10%;
+            height:80%;
+            width:70%;
+        }
+
+
+        #main{
+            height:100%;
+            border:2px solid rgb(53, 52, 52);
+            text-align:center;
+        }
+       .firstDiv {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3% 0% 4% 2%;
+        }
+        .boxes {
+            flex: 0 0 auto;
+            padding: 2%; /* Added unit here, for example: padding: 2px; */
+            border: #000 solid 2px;
+            width: 20%;
+        }
+        .td{
+            font-weight: bolder;
+        }
+        .boxes1 {
+            width: 85.6%;
+            border: #000 solid 2px;
+            text-align: right;
+            padding: 1% 10% 1% 1%;
+        }
+        .bottom-div{
+            font-size: 30px;
+             padding:0% 0% 3% 75%;
+             width:10%;
+        }
+        .checkers {
+            text-align: left;
+            margin-left: 10%;
+        }
+        .checkers a {
+            display: inline-block;
+            width: 45%;
+            margin: 0;
+  }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div id = "nav"> 
+           <div id = "left-nav"> <i class="fa-solid fa-user-secret"></i></div>
+           <div id="center-nav"><p>Welcome Bikash</p></div>
+           <div id="right-nav"><button class="btn"> Logout</button></div>
+        </div>
+        <div id = "main">
+            <div>
+               <h2>Product List</h2> 
+            </div> 
+           <!-- Product List -->
+           <div class="firstDiv">
+                <div class="boxes td">Name</div>
+                <div class="boxes td">Price</div>
+                <div class="boxes td">Stock</div>
+                <div class="boxes td">Action</div>
+                <div class="boxes">NodeJS</div>
+                <div class="boxes">9.99</div>
+                <div class="boxes">8</div>
+                <div class="boxes"><i class="fa-solid fa-font-awesome"></i></div>
+                <div class="boxes">React</div>
+                <div class="boxes">19.99</div>
+                <div class="boxes">5</div>
+                <div class="boxes"><i class="fa-solid fa-font-awesome"></i></div>
+                <div class="boxes">Angular</div>
+                <div class="boxes">29.99</div>
+                <div class="boxes">30</div>
+                <div class="boxes"><i class="fa-solid fa-font-awesome"></i></div>
+            </div>
+            <div><h2> Your Shopping Cart</h2></div>
+            <!-- Shopping cart  -->
+            <div class="firstDiv">
+                <div class="boxes td">Name</div>
+                <div class="boxes td">Price</div>
+                <div class="boxes td">Total</div>
+                <div class="boxes td">Quantity</div>
+                <div class="boxes">NodeJS</div>
+                <div class="boxes">9.99</div>
+                <div class="boxes">8</div>
+                <div class="boxes">
+    
+                    <div class="innerBox">
+                        <button class="decrement">-</button>
+                        <span class="counter">0</span>
+                        <button class="increment">+</button>
+                    </div>
+    
+    
+                </div>
+                <div class="boxes">Angular</div>
+                <div class="boxes">19.99</div>
+                <div class="boxes">5</div>
+                <div class="boxes">
+                    <div class="innerBox">
+                        <button class="decrement">-</button>
+                        <span class="counter">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <div class="boxes1"><b>Total:300.98</b></div>
+    
+            </div>
+            <!-- order -->
+            <div class ="bottom-div">
+                <button class="btn-place">Place Order</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
