@@ -1,0 +1,25 @@
+2.  In the code below there’s a setTimeout call scheduled, then a heavy calculation is run, that takes more than 100ms to finish.
+
+When will the scheduled function run?
+
+After the loop.
+Before the loop.
+In the beginning of the loop.
+What is console.log going to show?
+
+let i = 0;
+
+setTimeout(() => console.log(i), 100); // ?
+
+// assume that the time to execute this function is >100ms
+
+for(let j = 0; j < 100000000; j++) {
+
+  i++;
+
+}
+
+==> The scheduled function will run after the loop because the scheduled function is inside the settimeout method (an asynchronous method )  which will stay in the queue
+    for the specified time and the other codes below it will run.  After the specified time, the setTimeout function checks if the processor is available. 
+    In this case, the processor will not be available and the setTimeout method will wait until the processor is available.
+    So, the setTimeout method will run only after the loop.
