@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 
 const serverPort = 3000;
-const imagePath = 'earth.jpg'; // Replace with the actual path to your big image file
+const imagePath = 'earth.jpg'; 
 
 const server = http.createServer((req, res) => {
   fs.readFile(imagePath, (err, data) => {
@@ -19,8 +19,7 @@ const server = http.createServer((req, res) => {
       res.end(data);
     }
   });
-});
+}).listen(serverPort, () => {
+    console.log(`Listening on port ${serverPort}`);
+  });
 
-server.listen(serverPort, () => {
-  console.log(`Listening on port ${serverPort}`);
-});
