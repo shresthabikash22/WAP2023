@@ -1,0 +1,63 @@
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/1
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "title":"Node.js",
+    "description":"nice",
+    "price":500
+}
+
+###
+PUT http://localhost:3000/products/13
+Content-Type: application/json
+
+
+{
+    "title":"HP",
+    "description":"good",
+    "price":599
+}
+
+
+###
+DELETE http://localhost:3000/products/1
+
+
+// book.js file
+
+###
+GET  http://localhost:3000/books
+
+###
+GET  http://localhost:3000/books/1
+
+###
+POST  http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title":"Rich Dad Poor Dad",
+    "isbn":"0-446-67745-0",
+    "publishedDate":"2010-04-01",
+     "author":" Robert T. Kiyosaki ,  Sharon Lechter"
+}
+
+###
+PUT http://localhost:3000/books/04
+Content-Type: application/json
+
+{
+    "title":"The Great Gatsby",
+    "isbn":"9780743273565 ",
+    "publishedDate":"1925-04-10",
+     "author":" F. Scott Fitzgerald"
+}
+
+###
+DELETE http://localhost:3000/books/0
